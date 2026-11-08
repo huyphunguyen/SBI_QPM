@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sbi_qpm"
+version = "0.1.0"
+description = "Simulation-based inference of the Solar-System acceleration from quasar proper-motion VSH multipoles"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "healpy",
+    "astropy",
+    "torch",
+    "sbi",
+    "pymaster",
+    "corner",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+notebooks = ["tarp", "gaiaunlimited", "jupyter"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["sbi_qpm"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

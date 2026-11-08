@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: sbi_qpm
+Version: 0.1.0
+Summary: Simulation-based inference of the Solar-System acceleration from quasar proper-motion VSH multipoles
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: healpy
+Requires-Dist: astropy
+Requires-Dist: torch
+Requires-Dist: sbi
+Requires-Dist: pymaster
+Requires-Dist: corner
+Requires-Dist: matplotlib
+Provides-Extra: notebooks
+Requires-Dist: tarp; extra == "notebooks"
+Requires-Dist: gaiaunlimited; extra == "notebooks"
+Requires-Dist: jupyter; extra == "notebooks"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
