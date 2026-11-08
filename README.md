@@ -107,7 +107,7 @@ is built. The cache is not part of the repository.
 | `forward_model.py` | `WeightedSHT` | Noise-weighted spin-1 VSH least-squares fit. `build_lu(lmax)` caches the LU of the normal matrix AᵀC⁻¹A once, so every simulation is a single `solve_fast` (no refactorisation) |
 | `sbi_setup.py` | `n_real_params`, `build_full_alm_complex`, `build_det_alm_complex` | θ ↔ healpy complex alm; ℓ > lmax_sig drawn from Cℓ |
 | | `precompute_noise_cholesky`, `generate_pixel_noise` | Per-pixel correlated (pmra, pmdec) noise from the real errors |
-| | `create_prior_full`, `create_prior_det` | BoxUniform priors (alm ∈ [−alm_bound, alm_bound], Cℓ ∈ [0, Cl_bound]) |
+| | `create_prior_full`, `create_prior_det` | BoxUniform priors (alm ∈ [−alm_bound, alm_bound], Cℓ ∈ [0, Cl_bound]), priors are taken from `plot_power_spectrum` |
 | | `simulator_full`, `simulator_det` | Forward models θ → x. `simulator_full` returns `(x, pmra_map, pmdec_map)`; `simulator_det` returns `x` |
 | | `build_zbinned_solvers`, `precompute_zbinned_noise` | Per-redshift-bin solver and noise set-up |
 | `geometry.py` | `SkyFunction` (`s2g`, `g2s`, `vec2dir`, `dir2vec`), `icrs_to_galactic`, `direction_summary` | Dipole coefficients ↔ g vector, sky direction and credible regions |
