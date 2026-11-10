@@ -12,7 +12,7 @@ spin-1 harmonics, simulates mock skies with noise matched to the real
 catalogue, and learns the posterior on the low-ℓ multipoles from which **g**
 is read off.
 
-Catalogues: **Quaia** (G < 20) and **Gaia DR3 QSO candidates**.
+Catalogues: **Quaia** (G < 20) and **Gaia EDR3 QSO candidates**.
 
 ---
 
